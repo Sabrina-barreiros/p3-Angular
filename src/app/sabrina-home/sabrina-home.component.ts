@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sabrina-home.component.css']
 })
 export class SabrinaHomeComponent implements OnInit {
-
+  data1 = new Date();
   constructor() { }
 
   ngOnInit() {
