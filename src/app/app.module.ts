@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { SabrinaHomeComponent } from './sabrina-home/sabrina-home.component';
 import { SabrinaListComponent } from './sabrina-list/sabrina-list.component';
 import { SabrinaListService } from './sabrina-list.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot([
@@ -16,7 +17,7 @@ import { SabrinaListService } from './sabrina-list.service';
   ]
   )],
   declarations: [ AppComponent, HelloComponent, SabrinaHomeComponent, SabrinaListComponent ],
-  bootstrap:    [ AppComponent ]
- 
+  bootstrap:    [ AppComponent ],
+ providers: [SabrinaListService]
 })
 export class AppModule { }

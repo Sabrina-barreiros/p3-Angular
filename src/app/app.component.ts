@@ -1,4 +1,6 @@
 import { Component, VERSION } from '@angular/core';
+import { SabrinaListService } from './sabrina-list.service';
+
 
 @Component({
   selector: 'my-app',
@@ -7,4 +9,10 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent  {
   name = 'SabrinaTaskApp ';
+
+  //constructor(public sabrinaListService: SabrinaListService){}
+
+ // ngOnInit(){
+   // this.sabrinaListService.update();
+ // }
 }
